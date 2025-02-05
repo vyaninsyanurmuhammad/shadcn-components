@@ -3,7 +3,6 @@ import { CalendarDateRangePicker } from "@/components/dashboard/date-range-picke
 import { MainNav } from "@/components/dashboard/main-nav";
 import { Overview } from "@/components/dashboard/overview";
 import { RecentSales } from "@/components/dashboard/recent-sales";
-import TeamSwitcher from "@/components/dashboard/team-switcher";
 import { UserNav } from "@/components/dashboard/user-nav";
 import {
   Breadcrumb,
@@ -16,10 +15,10 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardHeader,
-  CardTitle,
   CardContent,
   CardDescription,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -27,9 +26,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Search } from "lucide-react";
-import Image from "next/image";
 
 export default function Page() {
   return (
@@ -59,7 +57,6 @@ export default function Page() {
           <div className="flex flex-col">
             <div className="border-b">
               <div className="flex h-16 items-center px-4">
-                <TeamSwitcher />
                 <MainNav className="mx-6 hidden md:block" />
                 <div className="ml-auto flex items-center space-x-4">
                   <Search />
