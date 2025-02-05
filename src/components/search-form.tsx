@@ -9,7 +9,7 @@ import {
 
 export function SearchForm({ ...props }: React.ComponentProps<"form">) {
   return (
-    <form {...props}>
+    <form {...props} className="group-data-[collapsible=icon]:hidden">
       <SidebarGroup className="py-0">
         <SidebarGroupContent className="relative">
           <Label htmlFor="search" className="sr-only">
